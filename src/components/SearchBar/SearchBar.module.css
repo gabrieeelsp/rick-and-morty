@@ -1,0 +1,82 @@
+.searchBox {
+    display: flex;
+    align-items: center;
+
+    
+}
+.searchInputBox {
+    display: flex;
+    align-items: center;
+    border: 3px solid green;
+    border-radius: 5px;
+    padding-right: 0px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.searchInput {
+    border: 0;
+    /* height: 2em; */
+    outline: 0;
+    color: white;
+    font-size: 1.2em;
+    background-color: black;
+    width: 100px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.searchButton {
+    border: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    background-color: black;
+    color: green;
+    padding: 6px;
+    cursor: pointer;
+}
+.searchButton:hover {
+    background-color: green;
+    color: white;
+    box-shadow: 0 0 10px rgb(1, 189, 1);
+}
+
+.searchButton:active {
+    
+    background-color: rgb(2, 103, 2);
+    border-radius: 5px;
+    /* box-shadow: 0 0 20px rgb(1, 189, 1); */
+}
+
+.randomButton {
+    font-size: 1.9em;
+    padding: 3px;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .searchBox {
+        margin-top: 20px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .searchBox {
+        margin-top: 20px;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .searchBox {
+        margin-top: 0px;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

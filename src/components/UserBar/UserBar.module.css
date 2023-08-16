@@ -1,0 +1,19 @@
+.userBar {
+    background-color: green;
+    display: flex;
+    justify-content: end;
+    padding: 2px 20px;
+    align-items: center;
+    color: white;
+    font-size: 0.8em;
+}
+
+.email {
+    margin-right: 20px;
+}
+
+.logout {
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}

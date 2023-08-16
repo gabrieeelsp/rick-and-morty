@@ -1,0 +1,134 @@
+.cardDetail {
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.imageBox {
+    
+}
+
+.imageBox img {
+    border: 3px solid green;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(1, 189, 1);
+
+    
+}
+
+.detailBox {
+    color: white;
+}
+
+.nameBox {
+    color: white;
+    background-color: #300B24;
+    border-bottom: 5px solid green;
+    border-right: 20px solid green;
+    font-size: 2em;
+    text-align: start;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.statusBox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.nameStatus{
+    font-size: 1.2em;
+    margin-bottom: 3px;
+    margin-left: 5px;
+}
+.dotStatusAlive {
+    font-size: 1.2em;
+    color: green;
+}
+.dotStatusDead {
+    font-size: 1.2em;
+    color: red;
+}
+.dotStatusUnknown {
+    font-size: 1.2em;
+    color: grey;
+}
+.genderBox {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.nameGender{
+    font-size: 1.2em;
+}
+
+.extraBox {
+    margin-top: 10px;
+    /* border: 1px solid #EB781E; */
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cardDetail {
+        flex-direction: column;
+    }   
+
+    .imageBox {
+        padding: 0px 20px;
+    }
+    .imageBox img {
+        display: block; /* remove extra space below image */
+        width: 100%;
+    }
+
+    .detailBox {
+        /* width: 100%; */
+        padding: 0px 20px;
+        
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .cardDetail {
+        flex-direction: column;
+    }
+    .imageBox {
+        padding: 0px 0px;
+    }
+    .imageBox img {
+        display: block; /* remove extra space below image */
+        width: 100%;
+    }
+    .detailBox {
+    }    
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .cardDetail {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .imageBox {
+        width: 35%;
+        padding: 0px 20px;
+    }
+    .imageBox img {
+    }
+    .detailBox {
+        width: 65%;
+        padding-left: 20px;
+
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

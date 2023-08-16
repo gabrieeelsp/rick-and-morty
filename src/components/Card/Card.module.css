@@ -1,0 +1,218 @@
+.card {
+    opacity: 0;
+    width: calc(25% - 40px);
+    margin: 16px;
+
+    background-color: aliceblue;
+
+    /* border: 1px solid green; */
+
+    transition: all 0.3s ease-in-out;
+    /* transition: opacity 1s ease; */
+    overflow: hidden;
+    border-radius: 4px;
+    /* box-shadow: 0 0 10px rgb(1, 189, 1); */
+    box-shadow: 0 0 5px white;
+}
+
+.cardVisible {
+    opacity: 1;
+}
+.cadDeleted {
+    display: none;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card .cardImage {
+    position: relative;
+}
+.cardImageAlive {
+    position: absolute;
+    background-color: green;
+    top: 10px;
+    right: 10px;
+    padding: 3px 5px;
+    font-family: 'Brush Script MT';
+    color: white;
+    font-size: 0.8em;
+}
+
+.cardImageClose {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 3px 5px;
+    color: white;
+    font-size: 0.8em;
+    display: none;
+    background-color: transparent;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.closeIcon {
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 100%;
+
+    transition: all 0.2s ease;
+}
+
+.closeIcon:hover {
+    color: red;
+    color: white;
+    box-shadow: 0 0 10px red;
+    background-color: rgb(255, 0, 0);
+}
+
+.closeIcon:active {
+    box-shadow: 0 0 20px red;
+}
+
+.card:hover .cardImageClose {
+    display: block;
+}
+
+
+.card .cardImage img {
+    width: 100%;
+    display: block;
+}
+
+.cardImage .cardName {
+    position: absolute;
+    bottom: 15px;
+    height: 2.5em;
+    background-color: #333;
+    opacity: 0.9;
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+   
+}
+
+.card .cardImage .cardName .cardNameInt {
+    background-color: green;
+    width: 90%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    opacity: 1;
+
+    cursor: pointer;
+    
+}
+
+.card .cardImage span {
+    font-family: 'Brush Script MT', cursive;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 0.2em;
+    text-align: start;
+}
+
+.cardText {
+    border-top: 4px solid #333;
+    border-bottom: 4px solid #333;
+    border-left: 3px solid #333;
+    border-right: 3px solid #333;
+
+    padding: 3px;
+    background-color: green;
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 0.9em;
+}
+
+.cardButtons {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 10px 0;
+
+}
+
+.bottomButton {
+    border: 0;
+    display: flex;
+    align-items: center;
+    color: green;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* .bottomButton:hover {
+    background-color: red;
+    color: white;
+    box-shadow: 0 0 10px red;
+} */
+
+/* .bottomButton:active {
+    
+    background-color: rgb(2, 103, 2);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(1, 189, 1);
+} */
+
+.bottomButton .icon {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: red;
+}
+
+.bottomButton:hover {
+    color: red;
+}
+
+.isfavorite {
+    color: blue;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .card {
+        width: calc(100% - 10px);
+        margin: auto;
+        margin-top: 25px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .card {
+        width: calc(100% - 40px);
+        margin: auto;
+        margin-top: 25px;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .card {
+        width: calc(50% - 40px);
+        margin: 16px;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .card {
+        width: calc(33% - 40px);
+        margin: 16px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .card {
+        width: calc(25% - 40px);
+        margin: 16px;
+    }
+}

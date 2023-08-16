@@ -1,0 +1,38 @@
+.footerBox {
+    height: 84px;
+    border-top: 2px solid green;
+
+    background-color: #F0F8FF;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+
+    color: #d5dce1;
+
+    padding-top: 10px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #d5dce1;
+}
+
+.leftBox {
+}
+
+.rightBox {
+}
+
+
+.item {
+    display: flex;
+    align-items: center;
+}
+.itemIcon {
+    margin-right: 7px;
+}
+
+.itemText {
+    
+}
