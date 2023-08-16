@@ -71,7 +71,7 @@ const ExtraDeail = (props) => {
                         <div className={style.locationBox}>
                             <span>Name: {tabText.name ? tabText.name : 'unknown'}</span>
                             <span>Type: {tabText.type}</span>
-                            <span>Dimentionf: {tabText.dimension}</span>
+                            <span>Dimention: {tabText.dimension}</span>
                         </div>
                     )
                 }  

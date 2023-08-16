@@ -2,6 +2,12 @@
   padding: 0px;
   margin: 0px;
 }
+
+@font-face {
+  font-family: 'Brush';
+  src: url('../public/CaveatBrush-Regular.ttf');
+}
+
 body {
 
   padding: 0px;
@@ -13,8 +19,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
-  font-family: 'Brush Script MT', cursive;
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* font-size: 20px; */
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
