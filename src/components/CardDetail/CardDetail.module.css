@@ -88,9 +88,11 @@
 
     .detailBox {
         /* width: 100%; */
-        padding: 0px 20px;
+        padding: 20px 20px;
+
         
     }
+
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -105,6 +107,7 @@
         width: 100%;
     }
     .detailBox {
+        padding: 20px 0px;
     }    
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -126,6 +129,7 @@
     .detailBox {
         width: 65%;
         padding-left: 20px;
+        padding-top: 0;
 
     }
 }

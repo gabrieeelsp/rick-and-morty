@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { setFilterFav, setOrderFav } from "../../redux/actions";
 
 import style from './Filter.module.css'
+
 const Filter = () => {
     const dispatch = useDispatch();
     const filter = useSelector((state) => state.filterFav)
