@@ -3,11 +3,6 @@
   margin: 0px;
 }
 
-@font-face {
-  font-family: 'Brush';
-  src: url('../public/CaveatBrush-Regular.ttf');
-}
-
 body {
 
   padding: 0px;
