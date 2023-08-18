@@ -1,0 +1,94 @@
+.discoverBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.tableBox {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.tableDiscover {
+    color: white;
+    margin: auto;
+    /* border: 1px solid green; */
+    box-shadow: 0 0 10px #EB781E;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.tableBox th {
+    background-color: #EB781E;
+}
+
+
+.tableDiscover tbody tr:hover {
+    /* background-color: rgb(0, 21, 0);; */
+    /* color: rgb(2, 192, 2); */
+    background-color: #2d1707;
+    color: #fb7e1e;
+    cursor: default;
+}
+
+.addButton {
+    color: green;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.removeButton {
+    color: red;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.paginationBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.pageSelector {
+    color: #EB781E;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+:global(.disable) {
+    color: gray;
+    cursor: default;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .tableBox {
+        width: 95%;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .tableBox {
+        width: 95%;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .tableBox {
+        width: 80%;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1500px) {
+
+}

@@ -3,6 +3,7 @@ import HomeView from "../views/Home/HomeView";
 import LoginView from '../views/Login/LoginView'
 import FavoritesView from "../views/Favorites/FavoritesView";
 import AboutView from "../views/About/AboutView";
+import DiscoverView from "./Discover/DiscoverView";
 
 export {
     DetailView,
@@ -10,4 +11,5 @@ export {
     FavoritesView,
     LoginView,
     AboutView,
+    DiscoverView,
 }

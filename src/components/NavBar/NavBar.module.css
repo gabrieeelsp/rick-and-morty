@@ -12,7 +12,7 @@
 }
 
 .logo {
-    width: 300px;
+    width: 280px;
 }
 
 .logo img {
@@ -21,11 +21,19 @@
 
 .link{
     font-size: 1.4em;
-    margin-left: 20px;
+    margin-left: 10px;
     color: white;
 }
+
+.link span {
+    color: red;
+    font-size: 0.5em;
+    position: relative;
+    top: -1.3em;
+    right: 5px;
+}
 .link:first-child {
-    margin-left: 0px;
+    margin-left: 20px;
 }
 
 .link:hover {
@@ -34,7 +42,6 @@
 
 .navBar :global(.active) {
     color: green;
-    font-weight: bold;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -67,20 +74,20 @@
     }
     .navLeft {
         flex-direction: row;
-        width: 70%;
+        /* width: 70%; */
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .navLeft {
         flex-direction: row;
-        width: 60%;
+        /* width: 60%; */
     }
 }
 
 @media only screen and (min-width: 1500px) {
     .navLeft {
         flex-direction: row;
-        width: 50%;
+        width: 60%;
     }
 }

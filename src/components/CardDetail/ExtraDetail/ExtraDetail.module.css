@@ -1,6 +1,6 @@
 .buttonsBox {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 .button {
     background-color: #ead7c8;

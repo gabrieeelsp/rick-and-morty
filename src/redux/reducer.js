@@ -1,4 +1,4 @@
-import { act } from "react-dom/test-utils";
+
 import {
     ADD_FAV,
     REMOVE_FAV, 
@@ -8,7 +8,13 @@ import {
     SET_FILTER_FAV,
     SET_ORDER_FAV,
 
-    APPLY_FILTER_AND_ORDER
+    APPLY_FILTER_AND_ORDER,
+    GET_CHARACTERS_DISCOVER,
+    SET_FILTER_GENDER_DISCOVER,
+    SET_FILTER_STATUS_DISCOVER,
+    SET_FILTER_SPECIE_DISCOVER,
+    SET_FILTER_NAME_DISCOVER,
+    SET_PAGE_DISCOVER,
     } from "./actions"
 
 const initialState = {
@@ -18,24 +24,35 @@ const initialState = {
     allFavorites: [],
     orderFav: 'none',
     filterFav: 'All',
+
+    discoverCharacters: {
+        results: [],
+        info: {
+            pages: 1
+        }
+    },
+    filterGenderDisc: 'All',
+    filterStatusDisc: 'All',
+    filterSpecieDisc: 'All',
+    filterNameDisc: '',
+    pageDisc: 1,
 }
 
 const applyFilterOrder = (filter, order, array) => {
     let newArray = [...array];
-    console.log(filter)
     if ( filter !== 'All') {
         newArray = newArray.filter((item) => item.gender === filter);
     }
-    console.log(newArray)
-    console.log(order)
+
     if ( order !== 'none' ) {
-        
         return newArray.sort((a, b) => {
             return order === 'ASC' ? a.id - b.id : b.id - a.id;
         }) 
     }
     return newArray;
 }
+
+
 const rootReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_FAV:
@@ -60,6 +77,21 @@ const rootReducer = (state = initialState, action) => {
         case APPLY_FILTER_AND_ORDER:
             return {...state, myFavorites: applyFilterOrder(state.filterFav, state.orderFav, state.allFavorites)}
 
+        case GET_CHARACTERS_DISCOVER:
+            return {...state, discoverCharacters: action.payload};
+        
+        case SET_FILTER_GENDER_DISCOVER:
+            return {...state, filterGenderDisc: action.payload}
+        
+        case SET_FILTER_STATUS_DISCOVER:
+            return {...state, filterStatusDisc: action.payload}
+        case SET_FILTER_SPECIE_DISCOVER:
+            return {...state, filterSpecieDisc: action.payload}
+        case SET_FILTER_NAME_DISCOVER:
+            return {...state, filterNameDisc: action.payload}
+        case SET_PAGE_DISCOVER:  
+            return {...state, pageDisc: action.payload}
+            
         default:
             return {...state}
     }

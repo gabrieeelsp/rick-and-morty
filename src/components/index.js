@@ -15,6 +15,8 @@ import Filter from "./Filter/Filter";
 import Form from './Form/Form'
 
 import Footer from "./Footer/Footer";
+import Discover from "./Discover/Discover";
+import DiscoverFilter from "./DiscoverFilter/DiscoverFilter";
 
 
 
@@ -29,4 +31,6 @@ export {
     Form,
     Filter,
     Footer,
+    Discover,
+    DiscoverFilter,
 }

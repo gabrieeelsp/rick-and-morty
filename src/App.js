@@ -15,6 +15,7 @@ import {
   FavoritesView,
   LoginView,
   AboutView,
+  DiscoverView,
 } from "./views";
 
 import { getRandomValidNumber } from "./utils";
@@ -79,6 +80,13 @@ function App() {
   };
   /* CHARACTERS -------------------- */
 
+  const hasCharacterById = (id) => {
+    for ( let i = 0; i < characters.length; i++) {
+      if ( characters[i].id === id ) return true;
+    }
+    return false;
+  }
+
 
   return (
     <div className="App">
@@ -96,6 +104,7 @@ function App() {
           <Route path="/detail/:id" element={<DetailView />} />
           <Route path="/favorites" element={<FavoritesView />} />
           <Route path="/about" element={<AboutView />} />
+          <Route path="/discover" element={<DiscoverView onSearch={onSearch} onClose={onClose} hasCharacterById={hasCharacterById} />} />
         </Routes>
         
       </div>

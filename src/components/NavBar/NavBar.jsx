@@ -23,6 +23,7 @@ function NavBar (props) {
                     <div className={style.navLinks}>
                         <NavLink to='/home' className={style.link} >Home</NavLink>
                         <NavLink to='/favorites' className={style.link} >Favorites</NavLink>
+                        <NavLink to='/discover' className={style.link} >Discover <span>NEW</span></NavLink>
                         <NavLink to='/about' className={style.link} >About</NavLink>
                     </div>
                 </div>

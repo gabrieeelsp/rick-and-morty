@@ -1,0 +1,31 @@
+.filtersBox {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.searchInputBox {
+    display: flex;
+    align-items: center;
+    border: 3px solid green;
+    border-radius: 5px;
+    padding-right: 0px;
+    overflow: hidden;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.searchInput {
+    border: 0;
+    /* height: 2em; */
+    outline: 0;
+    color: white;
+    font-size: 1.2em;
+    background-color: black;
+    width: 100px;
+    font-weight: bold;
+    /* text-align: right; */
+    padding-right: 10px;
+}
