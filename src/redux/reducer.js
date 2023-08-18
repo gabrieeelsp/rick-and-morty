@@ -81,14 +81,14 @@ const rootReducer = (state = initialState, action) => {
             return {...state, discoverCharacters: action.payload};
         
         case SET_FILTER_GENDER_DISCOVER:
-            return {...state, filterGenderDisc: action.payload}
+            return {...state, filterGenderDisc: action.payload, pageDisc: 1}
         
         case SET_FILTER_STATUS_DISCOVER:
-            return {...state, filterStatusDisc: action.payload}
+            return {...state, filterStatusDisc: action.payload, pageDisc: 1}
         case SET_FILTER_SPECIE_DISCOVER:
-            return {...state, filterSpecieDisc: action.payload}
+            return {...state, filterSpecieDisc: action.payload, pageDisc: 1}
         case SET_FILTER_NAME_DISCOVER:
-            return {...state, filterNameDisc: action.payload}
+            return {...state, filterNameDisc: action.payload, pageDisc: 1}
         case SET_PAGE_DISCOVER:  
             return {...state, pageDisc: action.payload}
             

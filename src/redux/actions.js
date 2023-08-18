@@ -81,7 +81,7 @@ export const getCharactersDiscover = (gender, status, specie, name, page) => {
             const specieSearch = specie === 'All' ? '' : specie;
             const nameSearch = name ? name : '';
             const pageSearch = page ? page : 1;
-           fetch(`https://rickandmortyapi.com/api/character?gender=${genderSearch}&status=${statusSearch}&species=${specieSearch}&name=${nameSearch}&page=${page}`)
+           fetch(`https://rickandmortyapi.com/api/character?gender=${genderSearch}&status=${statusSearch}&species=${specieSearch}&name=${nameSearch}&page=${pageSearch}`)
             .then((resp) => resp.json())
             .then((data) => {
                 if ( data.error ) {

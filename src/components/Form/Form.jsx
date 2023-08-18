@@ -12,7 +12,7 @@ const Form = (props) => {
 
     const [userData, setUserData] = useState({
         email: 'prueba@mail.com',
-        password: '123456',
+        password: '1234567',
     })
     const [errors, setErrors] = useState({
         email: '',
